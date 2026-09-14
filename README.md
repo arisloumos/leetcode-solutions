@@ -8,7 +8,7 @@ My goal is to solve at least **one LeetCode problem every day**.
 *Disclaimer: The solutions here are my own. They might not always be the most optimized, but they represent my current understanding and growth. I am constantly learning and improving!*
 
 ## 📁 Structure
-My solutions are automatically organized by difficulty (`Easy`, `Medium`, and `Hard`).
+My solutions are automatically organized by difficulty ([Easy](./Easy), [Medium](./Medium), and [Hard](./Hard)).
 
-## 🛠️ Languages Used
+## 🛠️ Languages Used (so far)
 * Python
