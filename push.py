@@ -23,7 +23,11 @@ status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, t
 if status:
     print("\nChanges detected. Pushing to GitHub...")
     subprocess.run(["git", "add", "."])
-    msg = f"Add solution(s): {', '.join(renamed)}" if renamed else "Update LeetCode solutions"
+    if renamed:
+        prefix = "Problem" if len(renamed) == 1 else "Problems"
+        msg = f"{prefix}: {', '.join(renamed)}"
+    else:
+        msg = "Update LeetCode solutions"
     subprocess.run(["git", "commit", "-m", msg], stdout=subprocess.DEVNULL)
     
     push = subprocess.run(["git", "push"], capture_output=True, text=True)
